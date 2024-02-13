@@ -1,7 +1,8 @@
 .card{
     width: 200px;
     height: 250px;
-
+    min-width: 200px;
+    max-height: 250px;
     margin: 10px;
     flex-direction: column;
     display: flex;
@@ -10,6 +11,7 @@
     border: 1px solid white;
     img{
         height:100%;
+        max-height: 200px;
         border-radius: inherit;
     }
     &.card:hover{
