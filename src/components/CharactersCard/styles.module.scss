@@ -1,0 +1,28 @@
+.card{
+    width: 200px;
+    height: 250px;
+
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid white;
+    img{
+        height:100%;
+        border-radius: inherit;
+    }
+    &.card:hover{
+        cursor: pointer;
+    }
+}
+
+.charName{
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 1px solid ;
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+}

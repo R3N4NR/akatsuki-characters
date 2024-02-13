@@ -1,0 +1,48 @@
+.modal {
+    position: fixed;
+    top: 60%;
+    left: 100px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    height: 80%;
+    width: 1100px; 
+    z-index: 9999;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(20, 50, 70, 1);
+    ul{
+        list-style: none;
+    }
+}
+
+.modalContent{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+}
+
+.closeButton {
+    cursor: pointer;
+}
+
+.section {
+    flex: 10px 10px 200px; /* Definindo a largura fixa de cada coluna */
+    margin-right: 20px; /* Espaçamento entre as colunas */
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+
+    span, ul {
+        margin-top: 5px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+    
+}
+
