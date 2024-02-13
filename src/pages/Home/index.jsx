@@ -3,9 +3,10 @@ import { api } from "../../api/apis";
 import styles from './styles.module.scss'
 import { CharBoard } from "../../components/CharactersBoard";
 import { MdOutlineArrowForwardIos, MdOutlineArrowBackIos} from "react-icons/md";
-
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header/Header";
+import Loading from '../../assets/loading-page.gif'
+
 export const Home = () => {
   const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -59,9 +60,11 @@ export const Home = () => {
 
   return (
   <>
-    <div>
+    <div className={styles.homeBody}>
       {loading ? (
-        <p>Carregando...</p>
+        <div>
+          <img src={Loading} alt="loadinglogo" />
+        </div>
       ) : (
         <div>
           <div className={styles.homeBody}>
